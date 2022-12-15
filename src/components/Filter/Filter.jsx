@@ -21,13 +21,5 @@ export const Filter = () => {
       />
     </Box>
 
-    // <label >
-    //   Find contacts by name
-    //   <input
-    //     type="text"
-    //     value={filter}
-    //     onChange={handleFilter}
-    //   />
-    // </label>
   );
 };
