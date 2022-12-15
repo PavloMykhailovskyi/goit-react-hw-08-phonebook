@@ -21,7 +21,7 @@ export default function Contacts() {
     return (
       <div className={css.container}>
         <Helmet>
-          <title>Your contacts</title>
+          <title>Contacts</title>
         </Helmet>
         <h1 className={css.title}>Phonebook</h1>
         <ContactForm />

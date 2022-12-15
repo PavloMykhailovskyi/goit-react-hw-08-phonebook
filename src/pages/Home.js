@@ -1,7 +1,17 @@
+import { Container, Typography } from "@mui/material";
+import { Helmet } from "react-helmet";
+
 export default function Home() {
     return (
-        <div>
-            <h1>Welcome here!!</h1>
-        </div>
-    )
+      <div>
+        <Helmet>
+          <title>Home</title>
+        </Helmet>
+        <Container sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+          <Typography variant="h1" color='primary' sx={{mt:10}}>
+            Phonebook
+                </Typography>
+        </Container>
+      </div>
+    );
 }

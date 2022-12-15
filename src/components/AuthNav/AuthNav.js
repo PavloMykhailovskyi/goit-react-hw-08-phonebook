@@ -1,10 +1,14 @@
-import { NavLink } from "react-router-dom"
+import { Button } from "components/Button";
 
 export const AuthNav = () => {
     return (
       <div>
-        <NavLink to='/register'>Register</NavLink>
-        <NavLink to='/login'>Log In</NavLink>
+        <Button sx={{ color: 'white' }} to="/register">
+          Register
+        </Button>
+        <Button sx={{ color: 'white' }} to="/login">
+          Log In
+        </Button>
       </div>
     );
 }
