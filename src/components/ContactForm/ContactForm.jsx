@@ -1,5 +1,4 @@
-import { Box, Button, Grid, TextField, Typography } from '@mui/material';
-import { matchIsValidTel, MuiTelInput } from 'mui-tel-input';
+import { Box, Button, Grid, TextField } from '@mui/material';
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addContact } from 'redux/contacts/operations';
@@ -20,11 +19,7 @@ export const ContactForm = () => {
         break;
 
       case 'number':
-        const isValid = matchIsValidTel(value);
-        if (isValid) {
-          setNumber(value);
-        }
-        
+        setNumber(value);
         break;
 
       default:

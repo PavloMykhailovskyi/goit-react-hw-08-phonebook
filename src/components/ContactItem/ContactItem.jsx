@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { deleteContact, editContact } from 'redux/contacts/operations';
-import css from './ContactItem.module.css';
 
 export const ContactItem = ({ id, name, number }) => {
   const [isEdit, setIsEdit] = useState(false);
