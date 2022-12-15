@@ -64,7 +64,7 @@ export const ContactForm = () => {
           </Grid>
           <Grid item xs={12}>
             <TextField
-              type="tel"
+              type="number"
               name="number"
               value={number}
               pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
